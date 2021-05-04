@@ -50,11 +50,11 @@ Entrada:        Saída:
 90              O número está fora da faixa
 
 7) Considerando o valor de A = 10 e B = 20, responda a saída das seguintes expressões:        
-Boolean(A > 10 && B <= 20) // ?
-Boolean(A > 10 || B <= 20) // ?
-Boolean((A === 10 || B > 20) && B === 20) // ?
-console.log(null || 2 || undefined) // ?
-Boolean(0 && 1) // ?
+Boolean(A > 10 && B <= 20) // false
+Boolean(A > 10 || B <= 20) // true
+Boolean((A === 10 || B > 20) && B === 20) // true
+console.log(null || 2 || undefined) // false
+Boolean(0 && 1) // false
 
 8) Escreva um script que receba três valores A, B, C. Faça as comparações necessárias para exibir
 na tela o maior valor entre os três.
