@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-//Exercicio 1
-console.log(!10)
-console.log(!!'String')
-//console.log(!!2.3)
-console.log(Boolean(null))
+        //Exercicio 1
+        console.log(!10)
+        console.log(!!'String')
+        //console.log(!!2.3)
+        console.log(Boolean(null))
 
-//Exeercicio 2
-console.log(10 > 2)
-console.log(5 >= "5")
-//console.log(5 >== "5")
-console.log("apple" > "pineapple")
-console.log("2" > "12")
-console.log(undefined == null)
-console.log(undefined === null)
-console.log(null == "\n0\n")
-console.log(null === +"\n0\n")
+        //Exeercicio 2
+        console.log(10 > 2)
+        console.log(5 >= "5")
+        //console.log(5 >== "5")
+        console.log("apple" > "pineapple")
+        console.log("2" > "12")
+        console.log(undefined == null)
+        console.log(undefined === null)
+        console.log(null == "\n0\n")
+        console.log(null === +"\n0\n")
 
-//Exercicio 3
- let valorA = Number(prompt("Digite um valor para A"))
+        //Exercicio 3
+        let valorA = Number(prompt("Digite um valor para A"))
 
-if(valorA > 10){
-    console.log("Valor de A é maior que 10 ")
-}
-console.log("Programa Finalizado")
+        if (valorA > 10) {
+            console.log("Valor de A é maior que 10 ")
+        }
+        console.log("Programa Finalizado")
 
-//Exercicio 4
+        //Exercicio 4
 
-let numero = Number(prompt("Digite um número para ver sua metade"))
-if((numero % 2) === 0){
-    console.log(numero/2)
-}
-console.log("Programa Finalizado")
+        let numero = Number(prompt("Digite um número para ver sua metade"))
+        if ((numero % 2) === 0) {
+            console.log(numero / 2)
+        }
+        console.log("Programa Finalizado")
 
-//Exercicio 5
-let numero1 = Number(prompt("Digite um número saber se é par ou ímpar"))
-if((numero1 %2) === 0){
-    console.log(`O número ${numero} é par`)
-}else{
-    console.log(`O número ${numero1} é ímpar`)
-}
+        //Exercicio 5
+        let numero1 = Number(prompt("Digite um número saber se é par ou ímpar"))
+        if ((numero1 % 2) === 0) {
+            console.log(`O número ${numero} é par`)
+        } else {
+            console.log(`O número ${numero1} é ímpar`)
+        }
+        //Exercicio 6
+        let numero2 = Number(prompt("Digite um número"))
+
+        if (numero2 > 20 && numero < 90) {
+            console.log("O número está na faixa entre 20 e 90")
+        } else {
+            console.log("O número setá fora da faixa")
+        }
 
     </script>
 </body>
+
 </html>
