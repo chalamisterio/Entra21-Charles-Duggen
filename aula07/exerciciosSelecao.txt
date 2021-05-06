@@ -1,19 +1,19 @@
 1) Qual é a saída dos seguintes comandos
-console.log(!10) // false
-console.log(!!"String") // true
-console.log(!!2.3) // Erro
-console.log(Boolean(null)) // false
+console.log(!10) // ?
+console.log(!!"String") // ?
+console.log(!!2.3) // ?
+console.log(Boolean(null)) // ?
 
 2) Qual é a saída das seguintes instruções
-console.log(10 > 2) // false
-console.log(5 >= "5") // true
-console.log(5 >== "5") // Erro
-console.log("apple" > "pineapple") // false
-console.log("2" > "12") // true
-console.log(undefined == null) //true
-console.log(undefined === null) //false
-console.log(null == "\n0\n") //false
-console.log(null === +"\n0\n") //false
+console.log(10 > 2) // ?
+console.log(5 >= "5") // ?
+console.log(5 >= "5") // ?
+console.log("apple" > "pineapple")
+console.log("2" > "12")
+console.log(undefined == null)
+console.log(undefined === null)
+console.log(null == "\n0\n")
+console.log(null === +"\n0\n")
 
 
 3) Escreva um script que receba uma valor A, verifique se o valor A é maior que 10 e
@@ -50,11 +50,11 @@ Entrada:        Saída:
 90              O número está fora da faixa
 
 7) Considerando o valor de A = 10 e B = 20, responda a saída das seguintes expressões:        
-Boolean(A > 10 && B <= 20) // false
-Boolean(A > 10 || B <= 20) // true
-Boolean((A === 10 || B > 20) && B === 20) // true
-console.log(null || 2 || undefined) // false
-Boolean(0 && 1) // false
+Boolean(A > 10 && B <= 20) // ?
+Boolean(A > 10 || B <= 20) // ?
+Boolean((A === 10 || B > 20) && B === 20) // ?
+console.log(null || 2 || undefined) // ?
+Boolean(0 && 1) // ?
 
 8) Escreva um script que receba três valores A, B, C. Faça as comparações necessárias para exibir
 na tela o maior valor entre os três.
@@ -80,20 +80,226 @@ escreva	se ele é Equilátero, Isósceles ou Escaleno.	Sendo que:
 − Triângulo	Isósceles: possui 2	lados iguais.	
 − Triângulo	Escaleno: possui 3 lados diferentes.
 
+ //Exercicio 10
+let ladoA = Number(prompt("Digite um Valor para lado A do Triangulo"))
+let ladoB = Number(prompt("Digite um Valor para lado B do Triangulo"))
+let ladoC = Number(prompt("Digite um Valor para lado C do Triangulo"))
+
+if(ladoA === ladoB && ladoB === ladoC && ladoC === ladoA){
+    console.log(`Com os 3 Lados Iguais é um Triângulo Equilaterio`)
+}else if(((ladoA === ladoB) && ladoC != ladoA) || ((ladoB === ladoC) && ladoA != ladoB)||((ladoC == ladoA) && ladoB != ladoC)){
+    console.log(`Com 2 Lados Iguais o é um Triangulo Isósceles`)
+}else if((ladoA != ladoB) && (ladoB != ladoC) && (ladoC != ladoA)){
+    console.log(`Com 3 lados diferentes o é Triângulo é: Escaleno`)
+}
+
 11) Leia um numero fornecido pelo usuário. Se esse número for positivo, calcule a raiz
 quadrada do numero. Se o número for negativo, mostre uma mensagem dizendo que o
 numero é inválido.
 
-12) Leia um numero real. Se o numero for positivo imprima a raiz quadrada. Do contrário,
+//Exercicio  11
+        let numero = Number(prompt("Digite um Número Para Calcular sua Raiz"))
+
+        if(numero < 0){
+            console.log("Número Negativo impossivel Calcular Raiz")
+        }else{
+            let raiz = Math.sqrt(numero)
+            console.log(`A raiz do número`)
+        }
+12) Escreva um script para ler um número e informar se ele é divisível por 5.
+
+//Exercicio 12
+        let numero = Number(prompt("Digite um Número para se ele é divisivel por 5"))
+
+        if((numero%5)===0){
+            console.log(`Número ${numero} divisivel por 5`)
+        }else{
+            console.log(`Número ${numero} não é divisivel por 5`)
+        }
+
+13) Leia um numero. Se o numero for positivo imprima a raiz quadrada desse número. Do contrário,
 imprima o numero ao quadrado.
 
-13) Leia o salario de um trabalhador e o valor da prestação de um empréstimo. Se a prestaçao
+let numero = Number(prompt("Digite um Número para Calcular sua raiz ou seu quadrado"))
+
+if(numero >= 0){
+    let raiz = Math.sqrt(numero)
+    console.log(`Raiz do Número é ${raiz}`) 
+}else{
+    let quadrado = (numero**2)
+    console.log(`Quadrado do Número é ${quadrado}`)
+}
+
+14) Leia o salario de um trabalhador e o valor da prestação de um empréstimo. Se a prestaçao
 for maior que 20% do salário imprima: “empréstimo não concedido”, caso contrario imprima:
 “empréstimo concedido”.
 
-14) Usando o comando switch, escreva um programa que leia um inteiro entre 1 e 7 e
-imprima o dia da semana correspondente a este numero. Isto é, domingo se for 1, segundafeira se for 2, e assim por diante.
+        //Exercicio 14
+let salario = Number (prompt("Digite o Salário do Trabalhador"))
+let emprestimo = Number(prompt("Digite o valor do Emprestimo"))
+let porcentagem = (salario* 20)/100
 
-15) Usando o comando switch, escreva um programa que leia um inteiro entre 1 e 12 e
+if(emprestimo > porcentagem){
+    console.log("emprestimo não concedido")
+}else {
+    console.log("emprestimo conedido")
+}
+
+15) Desenvolva um programa que recebe do usuário o placar de um jogo de futebol (os gols de cada time) e 
+informe se o resultado foi um empate, a vitória do primeiro time ou do segundo time.
+
+        //Exercicio 15
+let timeA = Number(prompt("Digite os Gols do TimeA"))
+let timeB = Number(prompt("Digite os Gols do TimeB"))
+
+if(timeA === timeB){
+    console.log(` A partida entre TimeA e TimeB terminou em empate ${timeA} gols TimeA e ${timeB} par TimeB`)
+    }else if(timeA > timeB){
+        console.log(`A partida entre TimeA e TimeB terminou com Vitória do TimeA com ${timeA} e TimeB ${timeB} `)
+    }else{
+        console.log(`A partida entre TimeA e TimeB terminou com Vitória do TimeB com ${timeB} e TimeA ${timeA} `)
+    }
+
+16) Desenvolva um programa que receba do usuário a sua idade e informe a situação de voto dele ("Não precisa votar", "Voto opcional", "Voto obrigatório").
+
+//Exercicio 16
+let idade = Number(prompt("Digite sua idade para Saber sua situação de Voto"))
+if(idade < 16){
+    console.log("Não precisa votar")
+}else if((idade >= 16) && (idade < 18) || (idade >= 70)){
+    console.log("Voto Opcional")
+}else{
+    console.log("Voto Obrigatório")
+}
+
+17) Faça um script que leia três números e mostre-os em ordem decrescente.
+        //Exercicio 17
+
+        let numeroA = Number(prompt("Digite primeiro Número"))
+        let numeroB = Number(prompt("Digite o Segundo Número"))
+        let numeroC = Number(prompt("Digite o Terceiro Número"))
+
+if(numeroA > numeroB && numeroB >numeroC){
+    console.log(`Os Números são ${numeroA} e ${numeroB} e ${numeroC}`)
+}else if(numeroA > numeroC && numeroC > numeroB){
+console.log(`Os numero são ${numeroA} e ${numeroC} e ${numeroB}`)
+}else if(numeroB > numeroA && numeroA > numeroC){
+    console.log(`Os Números são ${numeroB} e ${numeroA} e ${numeroC}`)
+}else if(numeroB > numeroC && numeroC > numeroA){
+console.log(`Os números são ${numeroB} e ${numeroC} e ${numeroA}`)
+}else if(numeroC >numeroA && numeroA > numeroB){
+    console.log(`Os numeros são ${numeroC} e ${numeroA} e ${numeroB}`)
+}else if(numeroC > numeroB && numeroB > numeroA){
+        console.log(`Os números São ${numeroC} e ${numeroB} e ${numeroA}`)
+    }
+
+18) Para doar sangue é necessário ter entre 18 e 67 anos. Faça um script que pergunte a idade de uma pessoa e diga se ela pode doar sangue ou não. 
+Use o operador lógicos OU (||).
+
+        //Exercicio 18
+let idade = Number(prompt())
+if(idade > 18 || idade < 67){
+    console.log("Doador esta abto a doar Sangue")
+} 
+
+19) Usando o comando switch, escreva um programa que leia um inteiro entre 1 e 7 e
+imprima o dia da semana correspondente a este numero. Isto é, domingo se for 1, segunda-feira se for 2, e assim por diante.
+
+ //Exercicio 19
+
+        let diaDaSemana = Number(prompt("Digite o Um Número para dia da semana"))
+        switch (diaDaSemana) {
+            case 1:
+                console.log("Domigo")
+                break;
+            case 2:
+                console.log("Segunda Feira")
+                break;
+            case 3:
+                console.log("Terça Feira")
+                break;
+            case 4:
+                console.log("Quarta Feira")
+                break
+            case 5:
+                console.log("Quinta Feira")
+                break;
+            case 6:
+                console.log("Sexta Feira")
+                break
+            case 7:
+                console.log("Sábado")
+                break
+            default:
+                console.log("Este Número não coresponde a um dia da Semana")
+        }
+
+20) Usando o comando switch, escreva um programa que leia um inteiro entre 1 e 12 e
 imprima o mês correspondente a este numero. Isto é, Janeiro se for 1, Fevereiro se 2, e
 assim por diante.
+
+      //Exercicio 20
+
+
+        let mes = Number(prompt("Digite o Um Número para um Meês do ano"))
+        switch (diaDaSemana) {
+            case 1:
+                console.log("Janeiro")
+                break;
+            case 2:
+                console.log("Fevereiro")
+                break;
+            case 3:
+                console.log("Março")
+                break;
+            case 4:
+                console.log("Abril")
+                break
+            case 5:
+                console.log("Maio")
+                break;
+            case 6:
+                console.log("Junho")
+                break;
+            case 7:
+                console.log("Julho")
+                break;
+            case 8:
+                console.log("Agosto")
+                break;
+            case 9:
+                console.log("Setembro")
+                break;
+            case 10:
+                console.log("Outubro")
+                break;
+            case 11:
+                console.log("Novembro")
+                break;
+            case 12:
+                console.log("Dezembro")
+                break;
+            default:
+                console.log("Este Número não coresponde a um dia da Semana")
+        }
+
+21) Usando o comando switch, faça um script que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. 
+Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+
+    //Exercicio 21
+        let turno = prompt("Digite seu turno")
+
+        switch (turno) {
+            case "M-matutino":
+                console.log("Bom dia")
+                break;
+            case "V-vespertino":
+                console.log("Boa Tarde")
+                break
+            case "N-noturno":
+                console.log("Boa Noite")
+                break
+            default:
+                console.log("Valor Inválido")
+                break;
+        }
