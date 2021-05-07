@@ -180,6 +180,19 @@ Entrada:                 Saída:
 11
 14
 
+      //Exercicio 10
+
+let contadorImpar = 0
+let contadorPar = 0
+for(let i = 0;i < 10; i++ ){
+let numero = Number(prompt("Digite um Valor"))
+if((numero%2) === 0){
+    contadorPar++
+}else{
+    contadorImpar++
+}
+}
+console.log(`A quantidade de3 Números Par é ${contadorPar} e Quantdade de Números íMpar é ${contadorImpar}` )
 
 11) Faça um script que receba valores inteiros e mostre na tela quantos desses valores recebidos estão no intervalo
 [10, 20] e quantos não estão. O programa irá parar de pedir números quando o usuário digitar um número negativo.
@@ -190,6 +203,30 @@ Entrada:                Saída:
 32
 14
 -1
+
+  //Exercicio 11
+        let c = 0
+        let contadorEstaIntervalo = 0
+        let contadorForaIntervalo = 0
+
+        while (c === 0) {
+            
+            let numero = Number(prompt("Digite um Valor"))
+
+             if(numero < 0){
+                break
+            }
+            if (numero >= 10 && numero <= 20) {
+                contadorEstaIntervalo++
+            } else {
+                contadorForaIntervalo++
+            }
+
+          
+
+        }
+console.log(`O valor de Número que Estão no Intervalo é ${contadorEstaIntervalo}\n
+E o número que estão fora do Intervalo é: ${contadorForaIntervalo}`)
 
 
 12) Construa um programa que leia vários valores númericos enquanto um valor negativo não for digitado. Após isso,

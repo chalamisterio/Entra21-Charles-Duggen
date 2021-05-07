@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Exercicio 11
+        let c = 0
+        let contadorEstaIntervalo = 0
+        let contadorForaIntervalo = 0
+
+        while (c === 0) {
+            let numero = Number(prompt("Digite um Valor"))
+           
+            if(numero < 0){
+            break;
+            }
+            
+            if (numero >= 10 && numero <= 20) {
+                contadorEstaIntervalo++
+            } else {
+                contadorForaIntervalo++
+            }
+
+           
+
+        }
+console.log(`O valor de Número que Estão no Intervalo é ${contadorEstaIntervalo}\n
+E o número que estão fora do Intervalo é: ${contadorForaIntervalo}`)
+
+    </script>
+</body>
+
+</html>
