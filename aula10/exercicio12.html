@@ -8,9 +8,19 @@
 <body>
     <script>
 //Exercicio 12
-
-
-
+let c = 0
+let count =0
+let media = 0
+while(c === 0){
+    count++
+  
+    let soma =0
+    let numero = Number(prompt("Digite um Valor"))
+    soma += numero
+    media = soma/count
+    c = Number(prompt("Digite 0 para Continuar ou -1 Para Sair"))
+}
+console.log(`A média das Notas é ${media.toFixed(2)}`)
     </script>
 </body>
 </html>
