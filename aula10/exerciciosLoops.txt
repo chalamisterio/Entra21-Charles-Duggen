@@ -83,6 +83,11 @@ Entrada:                Saída:
 5) Escreva um programa que declare uma váriavel numero, inicialize-a com 0, e incremente-a de 1000
 em 1000, mostrando seu valor na tela, ate que seu valor seja 100000 (cem mil).
 
+//Exercicio 05
+
+for(let i =0;i < 100000 + 1000; i+= 1000){
+    console.log(i)
+}
 
 6) Faça um programa que peça ao usuario para digitar 5 valores. Ao final, mostre a soma desses
 valores e média desses valores (arredondado para duas casas decimais).
@@ -92,7 +97,17 @@ Entrada:               Saída:
 2
 3
 4
-
+        //Exercicio 06
+        let soma = 0
+        let count = 0
+        let media
+        for (let i = 0; i < 5; i++) {
+            
+            let numero = Number(prompt("Digite o Valor"))
+            soma += numero
+            media = soma / count
+}
+        console.log("A soma dos Valores é: " + soma + " Média é " + media.toFixed(2))
 
 7) Faça um programa que receba um número N e mostre na tela todos os números ímpares de 0
 até N. (Faça o teste de mesa)
@@ -116,6 +131,16 @@ Entrada:                Saída:
                         2 x 10 = 20
 
 
+                        //Exercicio 08
+
+let tabuada = Number(prompt())
+for(let i = 0;i <= 10; i++){
+    resultado = tabuada * i
+
+    console.log(tabuada +" X "+ i +" = "+ resultado )
+}
+
+
 9) Escreva um script que leia 5 valores do usuário e mostre quantos desses valores digitados são negativos.
 Entrada:                Saída:
 1                       2
@@ -130,7 +155,18 @@ Entrada:                Saída:
 2
 -9
 
+//Exercicio09
+let count =0
+let numeroNegativo=0
+while(count != 5){
+   let numero =Number(prompt("Digite um Número positivo ou negativo")) 
+    if(numero < 0){
+        numeroNegativo++
+    }
+    count++
+}
 
+console.log("A quantidade de Números Negativos é: " + numeroNegativo )
 10) Elabore um  algoritmo que receba 10 números diferentes e mostre quantos são pares e quantos são ímpares.
 Entrada:                 Saída:
 1                        Pares: 4
