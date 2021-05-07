@@ -16,7 +16,7 @@ let ladoC = Number(prompt("Digite um Valor para lado C do Triangulo"))
 
 if(ladoA === ladoB && ladoB === ladoC && ladoC === ladoA){
     console.log(`Com os 3 Lados Iguais é um Triângulo Equilaterio`)
-}else if(((ladoA === ladoB) && ladoC != ladoA) || ((ladoB === ladoC) && ladoA != ladoB)||((ladoC == ladoA) && ladoB != ladoC)){
+}else if(((ladoA === ladoB) && ladoC != ladoA) || ((ladoB === ladoC) && ladoA != ladoB)||((ladoC === ladoA) && ladoB != ladoC)){
     console.log(`Com 2 Lados Iguais o é um Triangulo Isósceles`)
 }else if((ladoA != ladoB) && (ladoB != ladoC) && (ladoC != ladoA)){
     console.log(`Com 3 lados diferentes o é Triângulo é: Escaleno`)
