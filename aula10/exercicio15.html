@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let contador = 0
+        let count = 0
+        let media = 0
+        let auxiSalario=0
+        let mediaSalarial = 0
+        while (count === 0) {
+            let soma = 0
+            let somaSalario = 0
+            contador++
+            let salario = Number(prompt("Digite o Valor do Salário"))
+            if(salario <0){
+                break
+            }
+           somaSalario += salario
+           mediaSalarial = somaSalario/contador
+            if(salario > auxiSalario){
+                auxiSalario = salario
+            }
+            let filhos = Number(prompt("Digite a Quatidade de Filhos"))
+            soma += filhos
+            media = soma/contador
+
+        }
+
+        console.log(`Média Salárial é: ${mediaSalarial}\n Média de filhos ${media}\n Maior Salário ${auxiSalario}`)
+    </script>
+</body>
+
+</html>
