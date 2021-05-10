@@ -237,17 +237,53 @@ Entrada:                Saída:
 10
 -1
 
+//Exercicio 12
+let c = 0
+let count =0
+let media = 0
+while(c === 0){
+    count++
+  
+    let soma =0
+    let numero = Number(prompt("Digite um Valor"))
+    soma += numero
+    media = soma/count
+    c = Number(prompt("Digite 0 para Continuar ou -1 Para Sair"))
+}
+console.log(`A média das Notas é ${media.toFixed(2)}`)
+
 
 13) Elabore um script que mostre na tela os 15 primeiros múltiplos de 7.
 Saída:
 7 14 21 28 35 42 49 56 63 70 77 84 91 98 105 
 
+let impressao = ""
+let soma =0
+for(let i = 0;i < 15;i++){
+    
+     soma = soma + 7
+     impressao += " " + soma.toString()
+}
+console.log(impressao)
 
 14) Escreva um algoritmo que receba um número e calcule o fatorial desse número.
 Entrada:              Saída:
 5                     120
 ----------------------------
 6                     720
+
+       //exercicio 14
+let impresso = ""
+        let numero = Number(prompt("Digite um número a ser Calculado seu Fatorial"))
+        let resultado = numero
+        for (let i = 1; i < numero; i++) {
+            resultado *= i
+            impresso += " * " +i.toString()
+        }
+
+        console.log(`Resultado é:\n ${impresso} * ${numero} = ${resultado}`)
+
+
 
 
 15) A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salário e número
