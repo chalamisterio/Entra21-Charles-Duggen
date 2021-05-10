@@ -302,6 +302,30 @@ Entrada:                Saída:
 1
 -100
 
+  let contador = 0
+        let count = 0
+        let media = 0
+        let auxiSalario=0
+        let mediaSalarial = 0
+        while (count === 0) {
+            let soma = 0
+            let somaSalario = 0
+            contador++
+            let salario = Number(prompt("Digite o Valor do Salário"))
+            if(salario <0){
+                break
+            }
+           somaSalario += salario
+           mediaSalarial = somaSalario/contador
+            if(salario > auxiSalario){
+                auxiSalario = salario
+            }
+            let filhos = Number(prompt("Digite a Quatidade de Filhos"))
+            soma += filhos
+            media = soma/contador
+
+        }
+
 
 16) Crie um script que leia 5 valores e mostre qual o maior e o menor valor lido.
 Entrada:              Saída:
