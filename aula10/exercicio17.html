@@ -12,8 +12,7 @@
     <script>
         //Exercicio 17
 
-        console.log(`1-)José Bolinha\n2-)Maria Nascimento\n3-)João da Silva\n4-)Voto Nulo\n
-5-)Voto Branco`)
+        console.log(`1-)José Bolinha\n2-)Maria Nascimento\n3-)João da Silva\n4-)Voto Nulo\n5-)Voto Branco`)
 
         let c = 1
         let jose = 0
@@ -21,7 +20,7 @@
         let joao = 0
         let votoNulo = 0
         let votoBranco = 0
-        while (c === 1) {
+        while (c != 0) {
             let opcao = Number(prompt("Digite seu Voto"))
 
             switch (opcao) {
@@ -46,11 +45,11 @@
             }
             c = Number(prompt("Digite 1 para Continuar ou 0 para Sair"))
         }
-        console(`José Bolinha: ${jose}voto(s)\n
+        console.log(`José Bolinha: ${jose} voto(s)\n
         Maria Nascimento: ${maria} voto(s)\n
-        João da Silva: ${joa} voto(s)\n
+        João da Silva: ${joao} voto(s)\n
         Votos nulos: ${votoNulo} voto(s)\n
-        Votos em branco: ${votoBraco} voto(s)`)
+        Votos em branco: ${votoBranco} voto(s)`)
     </script>
 
 </body>
