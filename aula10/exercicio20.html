@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numero = Number(prompt("O menor Número"))
+        let numero1 = Number(prompt("Digite o maior Número"))
+        let somaPar= 0
+        let multiplica=1
+        for (let i = 0; i < numero1+1; i++) {
+            if (i >= numero && i <= numero1) {
+                
+                if ((i % 2) === 0) {
+                    somaPar += i
+                }else{
+                    multiplica = multiplica * i
+                }
+            }
+
+        }
+console.log(`Soma dos pares: ${somaPar}\n Multiplição dos Impares ${multiplica}`)
+    </script>
+</body>
+
+</html>
