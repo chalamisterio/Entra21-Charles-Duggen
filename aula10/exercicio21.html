@@ -13,21 +13,24 @@
         let numerosPrimos = ""
         let contador = 0
         let contador2 = 1
-        let contador20=2
-        while(contador < 20) {
+        let contador20=0
+        while(contador20 < 72) {
             
-
-            for (let i = 1 ; i < contador2; i++) {
-                if ((i%contador20) === 0) {
+            contador2++
+            for (let i = 2 ; i <= contador2; i++) {
+                
+                if ((i%contador2) === 0) {
                     contador++
                     
                 }
+                
                  }
+                  
             if (contador === 2) {
-                    numerosPrimos += `${contador2}`
+                    numerosPrimos += `${contador2}`+" "
                     contador = 0
                 }
-                contador2++
+              
 
                 contador20++
         }
