@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Exercicio 17
+
+        console.log(`1-)José Bolinha\n2-)Maria Nascimento\n3-)João da Silva\n4-)Voto Nulo\n5-)Voto Branco`)
+
+        let c = 1
+        let jose = 0
+        let maria = 0
+        let joao = 0
+        let votoNulo = 0
+        let votoBranco = 0
+        while (c != 0) {
+            let opcao = Number(prompt("Digite seu Voto"))
+
+            switch (opcao) {
+                case 1:
+                    jose += 1
+                    break
+                case 2:
+                    maria += 1
+                    break
+                case 3:
+                    joao += 1
+                    break
+                case 4:
+                    votoNulo += 1
+                    break
+                case 5:
+                    votoBranco += 1
+                    break
+                default:
+                    console.log("Valor invalido")
+                    break
+            }
+            c = Number(prompt("Digite 1 para Continuar ou 0 para Sair"))
+        }
+        console.log(`José Bolinha: ${jose} voto(s)\n
+        Maria Nascimento: ${maria} voto(s)\n
+        João da Silva: ${joao} voto(s)\n
+        Votos nulos: ${votoNulo} voto(s)\n
+        Votos em branco: ${votoBranco} voto(s)`)
+    </script>
+
+</body>
+
+</html>>
