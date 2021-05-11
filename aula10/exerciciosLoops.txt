@@ -335,6 +335,21 @@ Entrada:              Saída:
 2
 3
 
+let numero = 0
+        let maiorNumero = 0
+        let menorNumero =0
+        for (let i = 0; i < 5; i++) {
+            numero = Number(prompt("Digite um Número"))
+            if (numero > maiorNumero) {
+                maiorNumero = numero
+            }
+            
+           if(!menorNumero || numero < menorNumero){
+               menorNumero = numero
+           }
+
+        }
+        console.log(`O maior Número é: ${maiorNumero} e Menor é: ${menorNumero}`
 
 17) Faça um programa que simule a urna eleitoral. Apresente um menu com as seguintes informações para o usuário:
 1 - José Bolinha
