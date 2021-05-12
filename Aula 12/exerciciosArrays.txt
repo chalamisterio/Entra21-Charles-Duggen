@@ -75,6 +75,24 @@ console.log("Oprimeiro Vetor é:" + vetor +"\ne segundo Vetor é: " + vetor2)
 de pessoa. Escrever a mensagem “ACHEI”, se o nome estiver armazenado no vetor de nomes ou 
 “NÃO ACHEI” caso contrário. 
 
+vetorNomes = [] 
+for(let i = 0; i <=5; i++){
+    vetorNomes[i]= prompt("Digite um nome")
+    console.log(vetorNomes)
+}
+let nomesComparacao = prompt("Digite um Nome para comprar")
+
+let achei
+
+for(let i = 0; tamanhoVetor = vetorNomes.length; i < tamanhoVetor, i++){
+    if (vetorNomes[i] === nomesComparacao) {
+        achei = true  
+        break
+    }
+}
+
+achei ? console.log("Achei  o Nome") : console.log("NÃO ACHEI")
+
 
 6) Faça um programa que possua um vetor denominado A que armazene 6 numeros inteiros.
 O programa deve executar os seguintes passos:
@@ -85,10 +103,39 @@ A[1] e A[5] do vetor e mostre na tela esta soma.
 (c) Modifique o vetor na posição 4, atribuindo a esta posição o valor 100.
 (d) Mostre na tela cada valor do vetor A, um em cada linha.
 
+let soma = 0
+        vetorA = []
+        for (let i = 0; i < 6; i++) {
+            vetorA[i] = Number(prompt("Digite um Número"))
+        }
+        soma = vetorA[0] + vetorA[1] + vetorA[5]
+        console.log("A soma é:" + soma)
+        vetorA[4] = 100
+
+
+        for (let i = 0; i < 6; i++) {
+            console.log(`${vetorA}\n`)
+        }
 
 7) Ler um conjunto de numeros, armazenando-os em vetor e calcular o quadrado dos
 componentes deste vetor, armazenando o resultado em outro vetor. Os conjuntos tem 5
 elementos cada. Imprimir todos os conjuntos.
+
+ let temp = 0
+        let quadrado = 0
+        let vetorA = []
+        let vetorB = []
+        for (let i = 0; i < 5; i++) {
+            vetorA[i] = Number(prompt("Digite um Número"))
+        }
+
+        for (let i = 0; i < vetorA.length; i++) {
+            temp = vetorA[i]
+            quadrado = (temp ** 2)
+            vetorB.push(quadrado)
+        }
+
+        console.log("VetorA " + vetorA + "\n" + "VetorB " + vetorB)
 
 
 8) Crie um programa que leia 6 valores inteiros pares (GARANTA QUE ELES SEJAM PARES) e, em

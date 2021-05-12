@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let soma = 0
+        vetorA = []
+        for (let i = 0; i < 6; i++) {
+            vetorA[i] = Number(prompt("Digite um Número"))
+        }
+        soma = vetorA[0] + vetorA[1] + vetorA[5]
+        console.log("A soma é:" + soma)
+        vetorA[4] = 100
+
+
+        for (let i = 0; i < 6; i++) {
+            console.log(`${vetorA}\n`)
+        }
+    </script>
+
+</body>
+
+</html>
