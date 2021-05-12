@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+
+        let maiorElemento =0
+        let menorElemento =0
+        let vetor = []
+
+
+for(let i = 0;i< 5; i++){
+    vetor[i] = Number(prompt("Digite um Número"))
+}
+
+for(let i = 0;i< vetor.length ; i++){
+if(vetor[i] > maiorElemento){
+    maiorElemento = vetor[i]
+    }
+
+    if(!menorElemento || vetor[i] < menorElemento){
+menorElemento = vetor[i]
+}
+
+}
+console.log(`O menor elemento é ${menorElemento} e o Maior Elemento ${maiorElemento}`)
+
+   </script>
+   
+   
+   
+   
+
+</body>
+</html>
