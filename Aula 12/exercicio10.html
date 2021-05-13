@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let vetorA = []
+        let contaNegativo = 0
+        let somaPosicoes = 0
+        for (let i = 0; i < 10; i++) {
+            vetorA[i] = Number(prompt("Digite um Valor"))
+        }
+        for (let i = 0; i < vetorA.length; i++) {
+            if (vetorA[i] < 0) {
+                contaNegativo++
+            } else {
+                somaPosicoes += vetorA[i]
+            }
+        }
+
+        console.log(`A quantidade números negativos no Vetor é: ${contaNegativo}\n
+        A soma das posições positivas do Vetor é: ${somaPosicoes}`)
+
+    </script>
+</body>
+
+</html>

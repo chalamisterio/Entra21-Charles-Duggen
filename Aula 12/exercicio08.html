@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        vetorA =[]
+        vetorB =[]
+        for(let i = 0; i < 6; i++){
+        let valor = Number(prompt("Digite um Valor"))
+         
+        if((valor%2) === 0){
+             vetorA.push(valor)
+         }       
+            
+        }
+    for(let i = vetorA.length;i >= 0; i--){
+        vetorB.push(vetorA[i])
+    }
+console.log(`O primeiro Vetor ${vetorA}\n Segundo Vetor ${vetorB}`)
+
+    </script>
+</body>
+</html>

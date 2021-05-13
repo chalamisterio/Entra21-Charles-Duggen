@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        let maiorNumero = 0
+        let indiceMaior = 0
+        let menorNumero = 0
+        let indiceMenor = 0
+        let vetorA = []
+
+        for (let i = 0; i < 5; i++) {
+            vetorA[i]= Number(prompt("Digite um Valor"))
+        }
+
+        for (let i = 0; i < vetorA.length; i++) {
+            if (vetorA[i] > maiorNumero) {
+                maiorNumero = vetorA[i]
+                indiceMaior = i
+            }
+            if (!menorNumero || vetorA[i] < menorNumero) {
+                menorNumero = vetorA[i]
+                indiceMenor = i
+            }
+        }
+        console.log(`O indice do maior Valor é : ${indiceMaior} e do Menor ${indiceMenor}`)
+
+    </Script>
+</body>
+
+</html>
