@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let vetorA = []
+        for (let i = 0; i < 100; i++) {
+
+            vetorA[i] = Math.floor(Math.random() * (7 - 1)) + 1;
+
+        }
+        let opcao = 0
+        let numero1 = 0
+        let numero2 = 0
+        let numero3 = 0
+        let numero4 = 0
+        let numero5 = 0
+        let numero6 = 0
+
+        for (let i = 0; i < 100; i++) {
+            opcao = vetorA[i]
+            switch (opcao) {
+                case 1:
+                    numero1 += 1
+                    break
+                case 2:
+                    numero2 += 1
+                    break
+                case 3:
+                    numero3 += 1
+                    break
+                case 4:
+                    numero4 += 1
+                    break
+                case 5:
+                    numero5 += 1
+                    break
+                case 6:
+                    numero6 += 1
+                    break
+            }
+        }
+
+        console.log(`Quantide de vezes do 1- ${numero1} do 2- ${numero2} do 3- ${numero3} do 4- ${numero4} do 5- ${numero5} e do 6- ${numero6} `)
+    </script>
+</body>
+
+</html>

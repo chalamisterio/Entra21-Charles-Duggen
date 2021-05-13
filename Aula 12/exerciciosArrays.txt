@@ -211,7 +211,46 @@ let maiorNumero = 0
 
 12) Faça um programa que simule o lançamento de 100 dados (Utilize a função Math.random()). Armazene Os
 lançamentos em um vetor e mostre a quantidade de vezes que cada número (1..6) apareceu.
+let vetorA = []
+        for (let i = 0; i < 100; i++) {
 
+            vetorA[i] = Math.floor(Math.random() * (7 - 1)) + 1;
+
+        }
+        let opcao = 0
+        let numero1 = 0
+        let numero2 = 0
+        let numero3 = 0
+        let numero4 = 0
+        let numero5 = 0
+        let numero6 = 0
+
+        for (let i = 0; i < 100; i++) {
+            opcao = vetorA[i]
+            switch (opcao) {
+                case 1:
+                    numero1 += 1
+                    break
+                case 2:
+                    numero2 += 1
+                    break
+                case 3:
+                    numero3 += 1
+                    break
+                case 4:
+                    numero4 += 1
+                    break
+                case 5:
+                    numero5 += 1
+                    break
+                case 6:
+                    numero6 += 1
+                    break
+            }
+        }
+
+        console.log(`Quantide de vezes do 1- ${numero1} do 2- ${numero2} do 3- ${numero3} do 4- ${numero4} do 5- ${numero5} e do 6- ${numero6} `)
+    
 
 13) Faça um programa para ler a nota da prova de alunos e armazene num vetor, calcule e
 mostre a média geral da turma e também a maior nota da turma. O programa deve parar de armazenar
@@ -223,6 +262,22 @@ Entrada:             Saída:
 9
 9
 -1
+    let soma = 0
+        let media = 0
+        let maiorNota = 0
+        vetorA = []
+        
+        for (let i = 0; i < 5; i++) {
+            vetorA[i] = Number(prompt("Digte uma Nota"))
+            if(vetor[i] < 0){
+                break
+            }
+            soma += vetorA[i]
+            media = soma / 5
+            if (vetorA[i] > maiorNota) {
+                maiorNota = vetorA[i]
+            }
+        }
 
 
 14) Escreva um programa que leia dois vetores com 5 posições e mostre se eles são iguais ou diferentes
@@ -286,3 +341,41 @@ Entrada:              Saída:
 
 17) Crie um script que armazene 10 números aleatórios dentro de um vetor (utilize a função Math.random()),
 ordene o vetor de forma crescente. (**NÃO UTILIZAR A FUNÇÃO SORT**)
+ vetorA = []
+        vetorB = []
+        let menorNumero = 0
+        let maiorNumero = 0
+        let indiceMenor = 0
+    
+        for (let i = 0; i < 10; i++) {
+            vetorA[i] = Math.floor(Math.random() * 10)
+            console.log("Ordem"  + vetorA)
+        }
+
+        for (let i = 0; i < vetorA.length; i++) {
+            if (vetorA[i] > maiorNumero) {
+                maiorNumero = vetorA[i]
+
+            }
+           
+
+        }
+        console.log("O Mairor Numero " + maiorNumero)
+        
+        for (let i = 0; i < vetorA.length; i++) {
+            menorNumero = vetorA[0] 
+            for (let j = 0; j < vetorA.length; j++) {
+                if ( vetorA[j] < menorNumero) {
+                    menorNumero = vetorA[j]
+                    indiceMenor = j
+                }
+            }
+
+            vetorB.push(menorNumero)
+            vetorA[indiceMenor] = maiorNumero
+
+
+        }
+
+
+        console.log("Vetor Ordenado: " + vetorB )
