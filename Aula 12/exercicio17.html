@@ -15,10 +15,10 @@
         let menorNumero = 0
         let maiorNumero = 0
         let indiceMenor = 0
-    
+
         for (let i = 0; i < 10; i++) {
             vetorA[i] = Math.floor(Math.random() * 10)
-            console.log("Ordem"  + vetorA)
+            console.log("Ordem " + vetorA)
         }
 
         for (let i = 0; i < vetorA.length; i++) {
@@ -26,29 +26,29 @@
                 maiorNumero = vetorA[i]
 
             }
-           
+
 
         }
         console.log("O Mairor Numero " + maiorNumero)
-        
+
         for (let i = 0; i < vetorA.length; i++) {
-            menorNumero = vetorA[0] 
+            menorNumero = vetorA[0]
             for (let j = 0; j < vetorA.length; j++) {
-                if ( vetorA[j] < menorNumero) {
+                if (vetorA[j] < menorNumero) {
                     menorNumero = vetorA[j]
                     indiceMenor = j
                 }
             }
-
-            vetorB.push(menorNumero)
+            console.log(" Menor número" + menorNumero)
+            vetorB[i] = menorNumero
             vetorA[indiceMenor] = maiorNumero
-
+            indiceMenor = 0
 
         }
 
 
-        console.log("Vetor Ordenado: " + vetorB )
-        
+        console.log("Vetor Ordenado: " + vetorB)
+
 
 
 

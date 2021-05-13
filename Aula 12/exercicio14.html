@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,19 +14,27 @@
 
         vetorA = []
         vetorB = []
+        let verdade = false
         for (let i = 0; i < 5; i++) {
             vetorA[i] = Number(prompt("Digite um Valor Para VetorA"))
 
         }
-        for(let i = 0; i < 5 ; i++ ){
+        for (let i = 0; i < 5; i++) {
             vetorB[i] = Number(prompt("Digite um Para VetorB"))
         }
 
-        for(let i = 0;i < 5 ; i++){
-            if(vetorA[i] != vetorB){
+        for (let i = 0; i < 5; i++) {
+            if (vetorA[i] != vetorB[i]) {
                 console.log("Os vetores são diferentes")
                 break
+            } else {
+                verdade = true
             }
+
+        }
+
+        if(verdade){
+            console.log("Os vetores são iguais")
         }
     </script>
 </body>
