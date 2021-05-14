@@ -322,6 +322,25 @@ h
 i
 a
 
+ vetorA = []
+        vetorB = []
+        vetorC = []
+    
+        for (let i = 0; i < 5; i++) {
+            vetorA[i] = prompt("Digite uma letra para vetorA")
+        }
+  
+   
+        for (let j = 0; j < 5; j++) {
+            vetorB[j] = prompt("Digite uma letra para vetorB")
+        }
+        for(let i =0; i < 5; i++){
+    for(let j = 0; j < 5 ; j++){
+        if(vetorA[i] === vetorB[j]){
+            vetorC.push(vetorA[i])
+        }
+    }
+}
 
 16) Escreva um script que leia 2 números e crie um vetor que armazene os valores presentes 
 no intervalo entre os 2 números com o passo 2. Após isso, mostre na tela o vetor.
@@ -337,6 +356,18 @@ Entrada:              Saída:
                       6
                       8
                       10
+
+                      let numero = Number(prompt("Digite primeiro Número"))
+let numero2 = Number(prompt("Digite Segundo Número"))
+  vetorA=[]
+  count =0
+
+for(let i = numero ; i<= numero2 ; i += 2){
+    count++
+    vetorA[count] = i
+}
+console.log ("O intervalo é " + vetorA)
+
 
 
 17) Crie um script que armazene 10 números aleatórios dentro de um vetor (utilize a função Math.random()),
@@ -373,7 +404,7 @@ ordene o vetor de forma crescente. (**NÃO UTILIZAR A FUNÇÃO SORT**)
 
             vetorB.push(menorNumero)
             vetorA[indiceMenor] = maiorNumero
-
+            indiceMenor = 0
 
         }
 
