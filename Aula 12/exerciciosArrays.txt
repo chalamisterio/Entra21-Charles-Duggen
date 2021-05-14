@@ -410,3 +410,73 @@ ordene o vetor de forma crescente. (**NÃO UTILIZAR A FUNÇÃO SORT**)
 
 
         console.log("Vetor Ordenado: " + vetorB )
+
+18) Crie um script que preencha um vetor com 10 números aleatórios entre 1..10 (utilizar a função Math.random()),
+após isso mostre:
+a) Os números presentes no vetor
+b) A soma dos números pares
+c) A multiplicação dos números ímpares
+
+    let somaPar = 0
+        let multicacaoImpares = 1
+        vetorA = []
+        for (let i = 0; i < 10; i++) {
+            vetorA[i] = Math.floor(Math.random() * (11 - 1)) + 1;
+        }
+        console.log(" Números Presentes no Vetor \n" + vetorA)
+        for (let i = 0; i < 10; i++) {
+            if ((vetorA[i] % 2) === 0) {
+                somaPar += vetorA[i]
+            } else {
+                multicacaoImpares *= vetorA[i]
+            }
+        }
+console.log(`A soma dos números Pares é: ${somaPar} e Multiplicação dos Números Impares é: ${ multicacaoImpares} `)
+
+19) Faça um script que:
+a) Crie uma variável com o texto: "Sem trocar que o espinho é seco.\n Sem trocar que seco é ser sol.\n Sem trocar que algum espinho seco secará."
+b) Mostre na tela a variável
+c) Substitua as palavras "trocar" por "sacar" na String (**NÃO UTILIZAR O MÉTODO REPLACE**)
+d) Mostre na tela a String com os valores trocados
+
+ let variavelTexto = "Sem trocar que o espinho é seco.\n Sem trocar que seco é ser sol.\n Sem trocar que algum espinho seco secará."
+            vetorA = []
+            console.log(variavelTexto)
+            variavelTexto.split(" ")
+            vetorA = variavelTexto.split(" ")
+            console.log(vetorA)
+            for (let i = 0; i < vetorA.length; i++) {
+                if (vetorA[i] === "trocar") {
+                    vetorA[i] = "sacar"
+                }
+            }
+            console.log(vetorA.join(" "))
+20) Faça um programa que receba 10 notas de uma turma e armazene em um vetor. Depois disso, calcule a média de notas
+da turma e mostre na tela as notas que estão acima da média.
+
+let soma =0
+let media =0
+let impresso =""
+vetorA = []
+for(let i = 0; i < 10 ; i++){
+    vetorA[i]=Number(prompt("Digite uma Nota"))
+}
+for(let i =0; i < 10 ; i++){
+    soma += vetorA[i]
+media =(soma/10)
+
+}
+
+for(let i =0; i < 10 ;i++){
+    if(vetorA[i] > media){
+impresso += vetorA[i] + " "
+    }
+}
+console.log(`Amedia da Turma é ${media}\n AS notas acima da Média é ${impresso}`)
+
+21) Faça um script que receba o nome de cinco produtos e seus respectivos preços, armazene­-os em dois vetores separados, 
+um para os produtos e outro para os preços. O programa deve calcular e mostrar:
+a) A quantidade de produtos com preço inferior a R$ 50,00;
+b) O nome dos produtos com preço entre R$ 50,00 e R$ 100,00;
+c) A média dos preços dos produtos com preço superior a R$ 100,00.
+

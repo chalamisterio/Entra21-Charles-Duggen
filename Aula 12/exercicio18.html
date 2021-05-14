@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let somaPar = 0
+        let multicacaoImpares = 1
+        vetorA = []
+        for (let i = 0; i < 10; i++) {
+            vetorA[i] = Math.floor(Math.random() * (11 - 1)) + 1;
+        }
+        console.log(" Números Presentes no Vetor \n" + vetorA)
+        for (let i = 0; i < 10; i++) {
+            if ((vetorA[i] % 2) === 0) {
+                somaPar += vetorA[i]
+            } else {
+                multicacaoImpares *= vetorA[i]
+            }
+        }
+console.log(`A soma dos números Pares é: ${somaPar} e Multiplicação dos Números Impares é: ${ multicacaoImpares} `)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let matriz = []
+        let count = 0
+        let mostrandoMatriz = ""
+
+        for (let linha = 0; linha < 3; linha++) {
+            matriz[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matriz[linha][coluna] = Number(prompt("Digite um Número para Matriz"))
+
+                if (matriz[linha][coluna] > 10) {
+                    count++
+                    
+                }
+                mostrandoMatriz += matriz[linha][coluna] + "\t"
+            }
+
+            mostrandoMatriz += "\n"
+        }
+
+        console.log(mostrandoMatriz +"\n" + "Quntidade Valores acima de 10 = " +count)
+    </script>
+
+
+
+</body>
+
+</html>
