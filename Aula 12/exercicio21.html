@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let vetorProduto = []
+        let vetorPreco = []
+        let count = 0
+        let count2 = 0
+        let soma =0
+        let media =0 
+        let imprime = " "
+        let axi = " "
+        for (let i = 0; i < 5; i++) {
+            vetorProduto[i] = prompt("Digite o Nome do Produto")
+            vetorPreco[i] = Number(prompt("Digite o Preço do Produto"))
+
+        }
+        for (let i = 0; i < 5; i++) {
+            if (vetorPreco[i] < 50) {
+                count++
+            }
+
+        }
+        console.log(`A quantidade de Produtos inferior de $50 Reais é: ${count} `)
+
+        for (let j = 0; j < vetorPreco.length; j++) {
+            if ((vetorPreco[j] > 50) && (vetorPreco[j] < 100)) {
+            imprime += vetorProduto[j] + " "
+                
+            }
+        }
+        console.log("Nome dos Produtos" + imprime)
+
+
+        for(let i = 0; i < 5; i++){
+            if(vetorPreco[i] > 100){
+                soma += vetorPreco[i]
+                count2++
+                media = (soma/count2)
+            }
+        }
+
+        console.log(`A média dos preços dos produtos com preço superior a R$ 100,00 é: ${media}`)
+    </script>
+</body>
+
+</html>
