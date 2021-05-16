@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let linha1 = 0
+        let coluna1 = 0
+        let valorX = Number(prompt("Digite um Valor para Busca"))
+        let matriz = []
+        let mostrandoMatriz = ""
+
+        for (let linha = 0; linha < 3; linha++) {
+            matriz[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matriz[linha][coluna] = Number(prompt("Digite um Número para Matriz"))
+
+                
+            }
+
+        }
+        
+       
+
+for (let linha = 0; linha < 3; linha++) {
+    
+
+    for (let coluna = 0; coluna < 3; coluna++) {
+       let foi = false
+        if (valorX === matriz[linha][coluna]) {
+            foi =true
+        }
+        if(foi){
+            coluna1 = coluna
+            linha1 = linha
+        } 
+        mostrandoMatriz += matriz[linha][coluna] + "\t"
+    }
+
+    mostrandoMatriz += "\n"
+}
+
+console.log(mostrandoMatriz)
+
+        
+        console.log(mostrandoMatriz)
+        console.log("O valorX é: " + valorX +" e sua poisção é: linha " + linha1 + " e coluna " + coluna1)
+    </script>
+
+
+</body>
+
+</html>

@@ -32,6 +32,29 @@ Saída:
 0 0 0 1 0
 0 0 0 0 1
 
+let matriz = []
+
+        let mostrandoMatriz = ""
+
+        for (let linha = 0; linha < 5; linha++) {
+            matriz[linha] = []
+
+            for (let coluna = 0; coluna < 5; coluna++) {
+                if (linha != coluna) {
+                    matriz[linha][coluna] = 0
+                } else {
+                    matriz[linha][coluna] = 1
+
+                }
+                mostrandoMatriz += matriz[linha][coluna] + "\t"
+            }
+
+            mostrandoMatriz += "\n"
+        }
+
+        console.log(mostrandoMatriz)
+
+
 3. Leia uma matriz 3 x 3. Leia tambem um valor X. O programa devera fazer uma busca
 desse valor na matriz e, ao final, escrever a localização (linha e coluna) ou uma mensa-
 gem de “não encontrado”.
