@@ -10,6 +10,7 @@
 
 <body>
     <script>
+        let avisoNaoencontrado = false
         let linha1 = 0
         let coluna1 = 0
         let valorX = Number(prompt("Digite um Valor para Busca"))
@@ -22,36 +23,40 @@
             for (let coluna = 0; coluna < 3; coluna++) {
                 matriz[linha][coluna] = Number(prompt("Digite um Número para Matriz"))
 
-                
+
             }
 
         }
-        
-       
 
-for (let linha = 0; linha < 3; linha++) {
-    
 
-    for (let coluna = 0; coluna < 3; coluna++) {
-       let foi = false
-        if (valorX === matriz[linha][coluna]) {
-            foi =true
+
+        for (let linha = 0; linha < 3; linha++) {
+
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                let foi = false
+                if (valorX === matriz[linha][coluna]) {
+                    foi = true
+                }
+                if (foi) {
+                    coluna1 = coluna
+                    linha1 = linha
+                } else {
+                    avisoNaoencontrado = true
+                }
+                mostrandoMatriz += matriz[linha][coluna] + "\t"
+            }
+
+            mostrandoMatriz += "\n"
         }
-        if(foi){
-            coluna1 = coluna
-            linha1 = linha
-        } 
-        mostrandoMatriz += matriz[linha][coluna] + "\t"
-    }
 
-    mostrandoMatriz += "\n"
-}
-
-console.log(mostrandoMatriz)
-
-        
         console.log(mostrandoMatriz)
-        console.log("O valorX é: " + valorX +" e sua poisção é: linha " + linha1 + " e coluna " + coluna1)
+
+        if (avisoNaoencontrado) {
+            console.log("Não achei")
+        }
+
+        console.log("O valorX é: " + valorX + " e sua poisção é: linha " + linha1 + " e coluna " + coluna1)
     </script>
 
 

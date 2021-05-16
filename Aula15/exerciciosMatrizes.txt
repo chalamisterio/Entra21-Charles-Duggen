@@ -59,6 +59,54 @@ let matriz = []
 desse valor na matriz e, ao final, escrever a localização (linha e coluna) ou uma mensa-
 gem de “não encontrado”.
 
+  let avisoNaoencontrado = false
+        let linha1 = 0
+        let coluna1 = 0
+        let valorX = Number(prompt("Digite um Valor para Busca"))
+        let matriz = []
+        let mostrandoMatriz = ""
+
+        for (let linha = 0; linha < 3; linha++) {
+            matriz[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matriz[linha][coluna] = Number(prompt("Digite um Número para Matriz"))
+
+
+            }
+
+        }
+
+
+
+        for (let linha = 0; linha < 3; linha++) {
+
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                let foi = false
+                if (valorX === matriz[linha][coluna]) {
+                    foi = true
+                }
+                if (foi) {
+                    coluna1 = coluna
+                    linha1 = linha
+                } else {
+                    avisoNaoencontrado = true
+                }
+                mostrandoMatriz += matriz[linha][coluna] + "\t"
+            }
+
+            mostrandoMatriz += "\n"
+        }
+
+        console.log(mostrandoMatriz)
+
+        if (avisoNaoencontrado) {
+            console.log("Não achei")
+        }
+
+        console.log("O valorX é: " + valorX + " e sua poisção é: linha " + linha1 + " e coluna " + coluna1)
+
 4. Leia duas matrizes 3 x 3 e escreva uma terceira com os maiores valores de cada posiçãp
 das matrizes lidas.
 Entrada:          Saída:
@@ -70,8 +118,88 @@ Entrada:          Saída:
 5 4 5
 6 9 8
 
+let matriz = []
+        let matrizA = []
+        let matrizB = []
+        let mostrandoMatriz = ""
+        let mostrandoMatrizA = ""
+        let mostrandoMatrizB = ""
+        for (let linha = 0; linha < 3; linha++) {
+            matriz[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matriz[linha][coluna] = Number(prompt("Digite um Número para Matriz"))
+
+                mostrandoMatriz += matriz[linha][coluna] + "\t"
+            }
+            mostrandoMatriz += "\n"
+        }
+
+        console.log(mostrandoMatriz)
+
+        for (let linha = 0; linha < 3; linha++) {
+            matrizA[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matrizA[linha][coluna] = Number(prompt("Digite um Número para Matriz A"))
+
+                mostrandoMatrizA += matrizA[linha][coluna] + "\t"
+            }
+            mostrandoMatrizA += "\n"
+        }
+
+        console.log(mostrandoMatrizA)
+
+
+        for (let linha = 0; linha < 3; linha++) {
+            matrizB[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+
+                if (matriz[linha][coluna] > matrizA[linha][coluna]) {
+                    matrizB[linha][coluna] = matriz[linha][coluna]
+                } else {
+                    matrizB[linha][coluna] = matrizA[linha][coluna]
+                }
+
+                mostrandoMatrizB += matrizB[linha][coluna] + "\t"
+            }
+            mostrandoMatrizB += "\n"
+        }
+        console.log(mostrandoMatrizB)
+
 5. Leia uma matriz de 3 x 3 elementos. Calcule a soma dos elementos que estão acima da
 diagonal principal.
+
+ let matriz = []
+        let soma = 0
+        let mostrandoMatriz = ""
+        for (let linha = 0; linha < 3; linha++) {
+            matriz[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matriz[linha][coluna] = Number(prompt("Digite um Número para Matriz"))
+
+                mostrandoMatriz += matriz[linha][coluna] + "\t"
+            }
+            mostrandoMatriz += "\n"
+        }
+        console.log(mostrandoMatriz)
+
+        
+        for (let linha = 0; linha < 3; linha++) {
+            
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                if (coluna > linha) {
+                    soma += matriz[linha][coluna]
+                }
+
+
+            }
+
+        }
+        console.log("A soma da diagonal superior é: " + soma)
 
 6. Faça um script que leia o nome e as notas de 3 alunos e armazene essas informações em
 uma matriz no seguinte formato:

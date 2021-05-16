@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let matriz = []
+        let matrizA = []
+        let matrizB = []
+        let mostrandoMatriz = ""
+        let mostrandoMatrizA = ""
+        let mostrandoMatrizB = ""
+        for (let linha = 0; linha < 3; linha++) {
+            matriz[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matriz[linha][coluna] = Number(prompt("Digite um Número para Matriz"))
+
+                mostrandoMatriz += matriz[linha][coluna] + "\t"
+            }
+            mostrandoMatriz += "\n"
+        }
+
+        console.log(mostrandoMatriz)
+
+        for (let linha = 0; linha < 3; linha++) {
+            matrizA[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+                matrizA[linha][coluna] = Number(prompt("Digite um Número para Matriz A"))
+
+                mostrandoMatrizA += matrizA[linha][coluna] + "\t"
+            }
+            mostrandoMatrizA += "\n"
+        }
+
+        console.log(mostrandoMatrizA)
+
+
+        for (let linha = 0; linha < 3; linha++) {
+            matrizB[linha] = []
+
+            for (let coluna = 0; coluna < 3; coluna++) {
+
+                if (matriz[linha][coluna] > matrizA[linha][coluna]) {
+                    matrizB[linha][coluna] = matriz[linha][coluna]
+                } else {
+                    matrizB[linha][coluna] = matrizA[linha][coluna]
+                }
+
+                mostrandoMatrizB += matrizB[linha][coluna] + "\t"
+            }
+            mostrandoMatrizB += "\n"
+        }
+        console.log(mostrandoMatrizB)
+    </script>
+</body>
+
+</html>
