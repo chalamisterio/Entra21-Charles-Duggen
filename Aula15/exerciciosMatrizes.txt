@@ -20,7 +20,7 @@
             mostrandoMatriz += "\n"
         }
 
-        console.log(mostrandoMatriz +"\n" + "Quntidade Valores acima de 10 = " +count)
+        console.log(mostrandoMatriz +"\n" + "Quantidade Valores acima de 10 = " + count)
 
 
 2. Declare uma matriz 5 x 5. Preencha com 1 a diagonal principal e com 0 os demais

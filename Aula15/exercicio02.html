@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        matriz = []
+        let mostrandoMatriz = ""
+        for (let linha = 0; linha < 3; linha++) {
+            matriz[linha] = []
+            for (coluna = 0; coluna < 3; coluna++) {
+                if (coluna === linha) {
+                    matriz[linha][coluna] = 1
+                }
+
+                mostrandoMatriz += matriz[linha][coluna] + "\t"
+            }
+            mostrandoMatriz += "\n"
+        }
+        console.log(mostrandoMatriz)
+    </script>
+</body>
+
+</html>
