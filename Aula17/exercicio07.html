@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        geraValorAleatorio()
+
+        function geraValorAleatorio() {
+            let vetorA = []
+            let maiorNumero = 0
+            let menorNumero = 0
+            for (let i = 0; i < 50; i++) {
+                vetorA[i] = Math.floor(Math.random() * (1000 - 1)) + 1;
+            }
+            for (let i = 0; i < vetorA.length; i++) {
+                if (vetorA[i] > maiorNumero) {
+                    maiorNumero = vetorA[i]
+                }
+            }
+             menorNumero = vetorA[0]
+            for (let j = 0; j < vetorA.length; j++) {
+                if (vetorA[j] < menorNumero) {
+                    menorNumero = vetorA[j]
+                
+                }
+            }
+
+console.log(`O maior Número do Vetor é ${maiorNumero} e o Menor Número ${menorNumero}`)
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

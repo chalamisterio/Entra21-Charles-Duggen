@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let mediaDoAluno = Number(prompt("Digite a Média do Aluno"))
+
+let conceitoDoAluno = calcularConceito(mediaDoAluno)
+
+function calcularConceito(mediaDoAluno){
+    if(mediaDoAluno >= 0 && mediaDoAluno <= 4.9){
+        return "Conceito do Aluno é: D"
+    }else if(mediaDoAluno >= 5 && mediaDoAluno <= 6.9){
+        return "Conceito do Aluno é: C"
+    }else if(mediaDoAluno >= 7 && mediaDoAluno <= 8.9){
+        return "Conceito do Aluno é: B"
+    }else if(mediaDoAluno >= 9 && mediaDoAluno <= 10){
+        return "Conceito do Aluno é A"
+    }
+
+}
+
+
+console.log(conceitoDoAluno)
+    </script>
+</body>
+</html>
