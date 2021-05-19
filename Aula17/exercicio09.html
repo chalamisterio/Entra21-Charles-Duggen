@@ -7,8 +7,22 @@
 </head>
 <body>
     <script>
+let numero = Number(prompt("Digite um Número"))
+let auxi = 0
 
-
+resultado = calcularDivisores(numero, auxi)
+ 
+ 
+ 
+ function calcularDivisores(numero , auxi){
+     for(let i = numero ;i > 0; i--){
+         if(numero % i === 0 ){
+             ++ auxi
+         }
+     }
+     return auxi
+ }
+console.log(resultado)
         
     </script>
 </body>

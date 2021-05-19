@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+let anoNascimento = Number(prompt("Digite o Ano que vc nasceu"))
+  let idade = calcularIdade(anoNascimento)
+  
+  
+  function calcularIdade(anoNascimento){
+let anoAtual = new Date().getFullYear() 
+resultado = anoAtual - anoNascimento
+return resultado
+
+ }
+
+console.log(idade)
+
+
+    </script>
+</body>
+</html>

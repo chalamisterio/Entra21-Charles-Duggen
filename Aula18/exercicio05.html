@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let vetorA =[]
+let vetor =[]
+for(let i = 0; i < 5 ;i++){
+    vetorA[i] =Number(prompt("Digite um Número para vetor"))
+ 
+}
+console.log("vetor antes "+vetorA)
+
+vetor = modificaVetor(vetorA)
+function modificaVetor(vetorA){
+    vetorA[1] = 10
+    vetorA[2] = 30
+
+
+    return vetorA
+}
+
+console.log("vetor depois " + vetor)
+    </script>
+</body>
+</html>

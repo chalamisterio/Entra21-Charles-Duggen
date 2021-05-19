@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let vetorA = []
+        let vetor = []
+
+        vetor = indecePareNumeroPar(vetorA)
+
+        function indecePareNumeroPar(vetorA) {
+            let vetorB = []
+            for (let i = 0; i < 10; i++) {
+                vetorA[i] = Number(prompt("Digite um valor Para Vetor"))
+            }
+
+            for (let i = 0; i < 10; i++) {
+                if ((vetorA[i] % 2 === 0) && ((i % 2 === 0))){
+                    vetorB.push(vetorA[i])
+
+
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

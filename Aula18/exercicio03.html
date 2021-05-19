@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let elemento1 = prompt("elemento a ser repetido")
+let elemento2 = Number(prompt("quantide de Repetições"))
+
+let vetorA =[]
+
+vetorA = repetirSimbolo(elemento1,elemento2)
+
+function repetirSimbolo(elemento1,elemento2){
+   let vetorB = []
+    for(let i = 0;i < elemento2 ; i++){
+vetorB[i] = elemento1
+
+    }
+    return vetorB
+}
+console.log(vetorA)
+    </script>
+</body>
+</html>
