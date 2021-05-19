@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        let numero = Number(prompt("Digite um Número"))
+
+        let resultadoDoSorteio = calcularNumeroSorteado(numero)
+
+
+        function calcularNumeroSorteado(numero) {
+            let numeroSorteado = Math.floor(Math.random() * (10 - 1)) + 1
+
+            if (numero === numeroSorteado) {
+                return "Parabéns! O número sorteado foi o " + numeroSorteado
+            } else {
+                return "Que pena! O número sorteado foi o " + numeroSorteado
+            }
+        }
+        console.log(resultadoDoSorteio)
+    </Script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let anoInformado = Number(prompt("Digite o Ano"))
+        let resultado = calcularAnoBisexto(anoInformado)
+
+
+        function calcularAnoBisexto(anoInformado) {
+            if ((anoInformado % 4 === 0) && (anoInformado % 100 != 0) && (anoInformado % 400 === 0)) {
+                return true
+            } else {
+                return false
+            }
+
+        }
+        if(resultado){
+            console.log(`O ano <${anoInformado}> é bissexto`)
+        }else{
+            console.log(`O ano <${anoInformado}> não é bissexto`)
+        }
+
+    </script>
+</body>
+
+</html>

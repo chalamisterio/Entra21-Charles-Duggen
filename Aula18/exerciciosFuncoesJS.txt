@@ -93,13 +93,51 @@ console.log("vetor depois " + vetor)
 6) Elabore uma função que receba um vetor e retorne outro vetor que tenha todos os números que são pares e estão em
 índices pares do vetor.
 
+ let vetorA = []
+        let vetor = []
+
+        vetor = indecePareNumeroPar(vetorA)
+
+        function indecePareNumeroPar(vetorA) {
+            let vetorB = []
+            for (let i = 0; i < 10; i++) {
+                vetorA[i] = Number(prompt("Digite um valor Para Vetor"))
+            }
+
+            for (let i = 0; i < 10; i++) {
+                if ((vetorA[i] % 2 === 0) && (i % 2 === 0)) {
+                    vetorB.push(vetorA[i])
+
+
+                }
+
+
+            }
+            return vetorB
+        }
+
 
 7) Desenvolva uma função que receba como parâmetro um número de 1 a 10. Internamente, na função, será
 gerado um número aleatório de 1 a 10. A função deverá retornar se o parâmetro de entrada foi igual ao número
 sorteado internamente. Se o valor fornecido foi o sorteado, retorne "Parabéns! O número sorteado foi o X". Se
 não for igual, retorne "Que pena! O número sorteado foi o X". X é o número que foi sorteado.
 
+      let numero = Number(prompt("Digite um Número"))
 
+        let resultadoDoSorteio = calcularNumeroSorteado(numero)
+
+
+        function calcularNumeroSorteado(numero) {
+            let numeroSorteado = Math.floor(Math.random() * (10 - 1)) + 1
+
+            if (numero === numeroSorteado) {
+                return "Parabéns! O número sorteado foi o " + numeroSorteado
+            } else {
+                return "Que pena! O número sorteado foi o " + numeroSorteado
+            }
+        }
+
+        console.log(resultadoDoSorteio)
 8) A fim de manter o calendário anual ajustado com o movimento de translação da Terra, criou-se os anos
 bissextos, que têm 366 dias em vez dos 365 presentes nos anos normais.
 Para determinar se um ano é bissexto, é necessário saber se ele é multiplo de 4. Não pode ser múltiplo de 100,
@@ -110,3 +148,21 @@ ou "O ano <anoDigitado> não é bissexto".
 Exemplo:
 checarAnoBissexto(2020) // true
 checarAnoBissexto(2100) // false
+
+     let anoInformado = Number(prompt("Digite o Ano"))
+        let resultado = calcularAnoBisexto(anoInformado)
+
+
+        function calcularAnoBisexto(anoInformado) {
+            if ((anoInformado % 4 === 0) && (anoInformado % 100 != 0) && (anoInformado % 400 === 0)) {
+                return true
+            } else {
+                return false
+            }
+
+        }
+        if(resultado){
+            console.log(`O ano <${anoInformado}> é bissexto`)
+        }else{
+            console.log(`O ano <${anoInformado}> não é bissexto`)
+        }
