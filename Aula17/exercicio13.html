@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+let A = Number(prompt("Digite Valor para A"))
+let B = Number(prompt("Digite Valor para B"))
+let C= Number(prompt("Digite Valor para C")) 
+
+let impresso
+let resultado = calcularBhaskara(A,B,C)
+function calcularBhaskara(A,B,C){
+
+
+let delta =((B*B)-4*A*C)
+
+if(delta < 0){
+
+    console.log("Impossivel calcular Raiz Negativa")
+    
+}
+let XI =(-B+Math.sqrt((B*B)-4*A*C))/(2*A)
+
+let XII =(-B-Math.sqrt((B*B)-4*A*C))/(2*A)
+return XI,XII
+}
+
+console.log(resultado)
+    </script>
+</body>
+</html>
