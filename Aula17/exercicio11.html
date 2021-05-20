@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numeroPerfeito = Number(prompt("Digite o número para se é Perfeito"))
+        
+        let resultado = calcularNumeroPerfeito(numeroPerfeito)
+        
+        
+        function calcularNumeroPerfeito (numeroPerfeito) {
+            let soma =0
+            let y =1
+            let metade=0
+
+            metade = numeroPerfeito / 2
+            
+            while (y <= metade) {
+
+                if ((numeroPerfeito % y) === 0) {
+                    soma = soma + y
+                }
+                y = y + 1
+            }
+
+            if (soma === numeroPerfeito) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        if(resultado === true ){
+            console.log(numeroPerfeito + " é número perfeito")
+        }else{
+            console.log(numeroPerfeito + " Não é um número perfeito")
+        }
+    </script>
+</body>
+
+</html>

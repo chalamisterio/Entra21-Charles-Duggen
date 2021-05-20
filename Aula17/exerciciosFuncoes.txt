@@ -195,9 +195,58 @@ console.log(resultado)
 
 10) Faça uma função que receba um valor inteiro e positivo e calcule o seu fatorial.
 
+  calculaFatorial(fatorial)
+        function calculaFatorial(fatorial) {
+            let impresso = ""
+            let resultado = 1
+            for (let i = 1; i <= fatorial; i++) {
+                resultado *= i
+                impresso = resultado 
+
+
+            }
+            console.log(impresso)
+        }
+
+
 11) Faça uma função que verifique se um valor é perfeito ou não. Um valor é dito perfeito quando ele é igual a 
 soma dos seus divisores excetuando ele próprio. (Ex: 6 é perfeito, 6 = 1 + 2 + 3, que são seus divisores). 
 A função deve retornar um valor booleano. Receba um valor do usuário e mostre o resultado da função.
+
+ let numeroPerfeito = Number(prompt("Digite o número para se é Perfeito"))
+        
+        let resultado = calcularNumeroPerfeito(numeroPerfeito)
+        
+        
+        function calcularNumeroPerfeito (numeroPerfeito) {
+            let soma =0
+            let y =1
+            let metade=0
+
+            metade = numeroPerfeito / 2
+            
+            while (y <= metade) {
+
+                if ((numeroPerfeito % y) === 0) {
+                    soma = soma + y
+                }
+                y = y + 1
+            }
+
+            if (soma === numeroPerfeito) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        if(resultado === true ){
+            console.log(numeroPerfeito + " é número perfeito")
+        }else{
+            console.log(numeroPerfeito + " Não é um número perfeito")
+        }
+
+
 
 12) Faça um procedimento que recebe 50 valores inteiros por parâmetro e retorna-os ordenados em ordem decrescente.
 Gere 50 valores aleatórios com a função Math.random(), adicione-os em um vetor e mostre eles na tela antes da
