@@ -1,41 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+        let vetorA = []
 
+        for (let i = 0; i < 50; i++) {
+            vetorA[i] = Math.floor(Math.random() * 10)
 
-let vetorA =[]
-
-for(let i = 0; i < 50; i++){
-    vetorA[i] = Math.random().toFixed(2)
-}
-
-console.log(vetorA)
-
-ordenarVetor(vetorA) 
-function ordenarVetor(vetorA){
-    
-    for( let i = 1; i < vetorA.length; i++){
-        for(let j = 0; j < i ; j++){
-            if(vetorA[i] > vetorA[j]){
-                let temp = vetorA[j]
-                vetorA[j] = temp
-            }
         }
-    }
+        console.log("Ordem " + vetorA)
 
-console.log(vetorA)        
-}
+
+        let menorNumero = 0
+        let maiorNumero = 0
+        let indiceMaior = 0
+        let vetorB = []
+        ordenarVetor(vetorA, vetorB)
+        function ordenarVetor(vetorA, vetorB) {
+
+
+
+
+
+
+
+            menorNumero = vetorA[0]
+            for (let j = 0; j < vetorA.length; j++) {
+                if (vetorA[j] < menorNumero) {
+                    menorNumero = vetorA[j]
+
+                }
+            }
+
+            for (let i = 0; i < vetorA.length; i++) {
+                
+                for (let j = 0; j < vetorA.length; j++) {
+                    if (vetorA[j] > maiorNumero) {
+                        maiorNumero = vetorA[j]
+                        indeceMaior = j
+                    }
+                }
+                console.log(" Menor número" + maiorNumero)
+                vetorB[i] = maiorNumero
+                vetorA[indiceMaior] = maiorNumero
+                
+
+            }
+
+
+        }
+
+
+
+        console.log(vetorB)
 
     </script>
 
 
 
 </body>
+
 </html>
