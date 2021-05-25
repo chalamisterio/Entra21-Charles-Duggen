@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        cadastraNomesNotas()
+
+        function cadastraNomesNotas() {
+let mostrandoMatriz =""
+            let matriz = []
+            for (let linha = 0; linha < 3; linha++) {
+                matriz[linha] = []
+                for (let coluna = 0; coluna < 4; coluna++) {
+
+
+                    if (coluna === 0) {
+                        matriz[linha][coluna] = prompt("Digite um Nome")
+                    } else {
+                        matriz[linha][coluna] = Number(prompt("Digite uma Nota"))
+                        continue
+                    }
+                }
+
+            }
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 4; j++) {
+                    mostrandoMatriz += matriz[i][j] + "\t"
+                }
+                mostrandoMatriz += "\n"
+            }
+            console.log(mostrandoMatriz)
+        }
+
+
+    </script>
+</body>
+
+</html>
