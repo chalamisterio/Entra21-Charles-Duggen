@@ -39,18 +39,20 @@
 
                 }
             }
+            console.log("o menor nNumero " + menorNumero)
 
             for (let i = 0; i < vetorA.length; i++) {
                 
                 for (let j = 0; j < vetorA.length; j++) {
                     if (vetorA[j] > maiorNumero) {
                         maiorNumero = vetorA[j]
-                        indeceMaior = j
+                        indiceMaior = j
+                        
                     }
                 }
-                console.log(" Menor número" + maiorNumero)
+                console.log(" Menor número  " + maiorNumero)
                 vetorB[i] = maiorNumero
-                vetorA[indiceMaior] = maiorNumero
+                vetorA[indiceMaior] = menorNumero
                 
 
             }

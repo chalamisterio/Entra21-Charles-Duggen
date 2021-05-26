@@ -11,11 +11,11 @@
 let A = Number(prompt("Digite Valor para A"))
 let B = Number(prompt("Digite Valor para B"))
 let C= Number(prompt("Digite Valor para C")) 
-
+let resultado =[]
 let impresso
-let resultado = calcularBhaskara(A,B,C)
+ resultado = calcularBhaskara(A,B,C)
 function calcularBhaskara(A,B,C){
-
+let vetorA =[]
 
 let delta =((B*B)-4*A*C)
 
@@ -27,7 +27,7 @@ if(delta < 0){
 let XI =(-B+Math.sqrt((B*B)-4*A*C))/(2*A)
 
 let XII =(-B-Math.sqrt((B*B)-4*A*C))/(2*A)
-return XI,XII
+return  [XI,XII]
 }
 
 console.log(resultado)

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let c
+        let matriz = []
+
+        function chamarMenu() {
+
+            while (c != 0) {
+                opcao = Number(prompt("Digite um Número Corespondente a opção\n 1-) Cadastrar Nome\n 2-) Editar Nome\n 3-)Pedir Nota do Aluno\n 4-)Exibição dos Dados em Tabela"))
+                switch (opcao) {
+                    case 1:
+                        cadastraNome()
+                        break;
+                    case 2:
+                        verificacaoNome()
+                        break;
+                    case 3:
+                        cadastraNotas()
+                        break;
+                    case 4:
+                        organizarTabela()
+                        break
+                    default:
+                        alert("Opção inválida")
+
+
+
+                }
+
+                c = Number(prompt("Digite 1 Para Continuar ou 0 Para Sair"))
+            }
+
+        }
+        chamarMenu()
+
+        function cadastraNome() {
+
+            for (let linha = 0; linha < 3; linha++) {
+                matriz[linha] = []
+                for (let coluna = 0; coluna < 2; coluna++) {
+
+                    if (coluna === 0) {
+                        matriz[linha][coluna] = +prompt("Digite a Matricula")
+                    } else {
+                        matriz[linha][1] = prompt("Digite o Nome")
+
+                    }
+                }
+
+            }
+        }
+
+        function casoOK(linha) {
+            let outroNome = prompt("digite o nome correto")
+            matriz[linha][1] = outroNome
+        }
+        function verificacaoNome() {
+            let verificaMatricula = +prompt("insira o número da matriculo")
+            for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 6; j++) {
+                    if (verificaMatricula === matriz[i][j]) {
+                        confirm(`O usuario ${matriz[i][1]} está cadastrado na matricula ${verificaMatricula}, deseja alterar? Pressione ok.`)
+                        if (true) {
+                            casoOK(i)
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        function cadastraNotas() {
+            let media = 0
+            let soma = 0
+            let impresso = ""
+            for (let linha = 0; linha < 3; linha++) {
+                impresso = matriz[linha][1]
+                for (let coluna = 0; coluna < 6; coluna++) {
+
+                    if (matriz[linha][coluna] === matriz[linha][2] || matriz[linha][coluna] === matriz[linha][3] || matriz[linha][coluna] === matriz[linha][4]) {
+                        matriz[linha][coluna] = Number(prompt("Digite uma Nota Para " + impresso))
+                        soma += matriz[linha][coluna]
+                        media = soma / 3
+                    }
+                
+                    if (matriz[linha][coluna] === matriz[linha][6]) {
+                        matriz[linha][coluna] = media.toFixed(2)
+                    }
+                }
+                soma =0
+            }
+
+        }
+        </script>
+</body>
+</html>
