@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let objeto = {
+            p1: 20,
+            p2: "50",
+            p3: 85,
+            p4: "Olá",
+            p5: "Teste",
+            p6: "string",
+            p7: 10
+        }
+
+        somaValorVetor(objeto)
+        function somaValorVetor(objeto) {
+            let soma = 0
+            for (let prop in objeto) {
+                if (isFinite(objeto[prop])) {
+                    soma += +objeto[prop]
+                }
+            }
+            console.log(soma)
+        }
+    </script>
+</body>
+
+</html>

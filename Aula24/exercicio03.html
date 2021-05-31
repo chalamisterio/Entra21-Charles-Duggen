@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let contador = {
+            conta: 0,
+            incrementa() {
+                this.conta++
+            },
+            decrementa(){
+                this.conta--
+            },
+            incrementaEmQuantidade(quantidade){
+                this.conta += quantidade
+            },
+            decrementaEmQuantidade(quantidade){
+                this.conta -= quantidade
+            },
+            mostraContador(){
+                console.log(this.conta)
+            }
+
+        }
+    </script>
+</body>
+
+</html>
