@@ -1,0 +1,15 @@
+
+
+
+body{
+    background-image: url(/siteStellar/static/imagem/overlay.png), linear-gradient(45deg
+, #e37682 15%, #5f4d93 85%);
+
+
+}
+.Primeirocabeçalho{
+    
+    background-color: #5f4d93;
+    width: 400px;
+    height: 500px;
+}
