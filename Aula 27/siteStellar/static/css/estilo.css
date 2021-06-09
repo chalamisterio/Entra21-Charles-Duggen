@@ -9,7 +9,84 @@ body{
 }
 .Primeirocabeçalho{
     
-    background-color: #5f4d93;
-    width: 400px;
-    height: 500px;
+    margin: auto;
+    width: 1100px;
+    height: 310px;
+    padding: 60px;
+    text-align: center;
+    color: ivory;
+    font-size: 20px;
+}
+.twitter{
+    color: ivory;
+
+}
+.html-link{color: ivory;
+}
+
+.nav {
+	margin: 0 auto;
+	width:  1220px;
+	background:white;
+	height: 50px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.nav::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.nav ul {
+    text-align: center;
+	padding: 0;
+	margin: 0px;
+	list-style: none;
+}
+
+.nav ul li {
+	display: inline;
+}
+
+.nav ul li  {
+    margin-top: 15px;
+    padding: 2px 25px;
+    display: inline-block;
+
+    
+    background-color:white;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid white;
+}
+.main{
+width: 1220px;
+background: white;
+margin: auto;
+margin-top:-20px;
+}
+.main1{
+    width: 100%;
+    
+}
+
+.major{
+    margin-left: 70px;
+    padding-top: 180px;
+}
+
+.texto{
+    margin-top: 80px;
+    width: 45%;
+    float: left;
+    margin-left:70px;
+}
+.imagem1{
+    
+    float: right;
+    border: 2px solid white; 
+    border-radius: 50%;
+    
 }
