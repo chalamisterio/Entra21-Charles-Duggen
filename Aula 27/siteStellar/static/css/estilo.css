@@ -7,6 +7,11 @@ body{
 
 
 }
+
+h2 {
+    margin: 0px;
+}
+
 .Primeirocabeçalho{
     
     margin: auto;
@@ -25,7 +30,7 @@ body{
 }
 
 .nav {
-	margin: 0 auto;
+    margin: 0 auto;
 	width:  1220px;
 	background:white;
 	height: 50px;
@@ -65,11 +70,24 @@ body{
 width: 1220px;
 background: white;
 margin: auto;
-margin-top:-20px;
 }
 .main1{
     width: 100%;
     
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.content{
+    display: inline-block;
+    width: 54%;
+    
+    margin-top: 80px;
+    padding-left: 70px;
 }
 
 .major{
@@ -78,15 +96,68 @@ margin-top:-20px;
 }
 
 .texto{
+    background: rosybrown;
     margin-top: 80px;
-    width: 45%;
+    width: 50%;
     float: left;
-    margin-left:70px;
+    
+    
 }
 .imagem1{
     
-    float: right;
-    border: 2px solid white; 
+    text-align: center;
+    width: 40%;
+    float: right;        
+}
+
+.imagem1 img {
     border-radius: 50%;
+}
+
+
+.actions{
+    margin-top: 50px;
+    list-style: none;
+}
+ .button{
+    
+     border-radius: 5px;
+     border: 1px solid burlywood;
+     background: white;
+     width: 45px;
+    padding: 9px;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-decoration: none;
+    color: black;
+  
+    
+ }
+
+ .segundaSection{
+    width: 100%;
+    background: #5f4d93;    
+    text-align: center;
+}
+
+.Major{
+    width: 100%;
     
 }
+ .segundoHeader{
+width: 100%;
+    background: turquoise;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+}
+
+.features {
+    list-style: none;
+}
+
+.features li {
+    width: 33%;
+    display: inline-block;
+}
+ 
