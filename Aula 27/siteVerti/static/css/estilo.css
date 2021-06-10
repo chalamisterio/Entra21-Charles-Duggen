@@ -1,0 +1,63 @@
+.conteiner{
+
+    width: 100%;
+    background: white;
+}
+
+.MenuSuperior{
+    margin-top: 0;
+    background: tomato;
+    height: 180px;
+    display: flex;
+    width: 1500px;
+    margin: auto;
+}
+.div1 {
+    width:auto;
+
+}
+.div2{
+    width: auto;
+    
+}
+.MenuSuperior div {
+border: 1px solid violet;
+
+}
+.DivMenu {
+    margin: auto;
+    margin-right: 0px;
+	width:  650px;
+	background:white;
+    height: 50px;
+    
+   
+}
+
+.DivMenu::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.DivMenu ul {
+    text-align: center;
+	padding: 0;
+	margin: 0px;
+	list-style: none;
+}
+
+.DivMenu ul li {
+	display: inline;
+}
+
+.DivMenu ul li  {
+    margin-top: 15px;
+    padding: 2px 25px;
+    display: inline-block
+}
+
+.MenuSuperior:nth-of-type(1) {            
+flex-direction: row;
+}    
+
