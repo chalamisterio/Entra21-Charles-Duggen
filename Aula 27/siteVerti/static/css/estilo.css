@@ -17,7 +17,7 @@ margin: 0;}
     margin: auto;
     flex-direction: row;
     
-    align-items: baseline;
+    align-items: center;
     
     
 }
@@ -31,17 +31,12 @@ margin: 0;}
 
 .div1 div{
     color: white;
-    margin-top: 60px;
     font-size: 50px;
     background: violet;
     border-radius: 10px;
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
-}
-.div2 div{
-    margin-top:60px;
-
 }
 
 .DivMenu {
@@ -130,4 +125,20 @@ justify-content: space-between;
     height: 135px;
 font-size: 35px;
 text-align: center;
+}
+
+.botaoAzulEBotaoPreto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botaoAzulEBotaoPreto a{
+    width: 300px;
+    background-color: teal;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;    
+    margin-bottom: 10px;
 }
