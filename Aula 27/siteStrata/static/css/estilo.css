@@ -22,3 +22,117 @@ header h1{
 .link{
     color:lightslategray;
 }
+
+.PrimeiraSection{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 36px;
+    padding-bottom: 4px;
+    
+}
+.PrimeiraSection p {
+    margin-bottom: 32px;
+}
+.PrimeiraSection h2{
+    margin-bottom: 21.6px;
+}
+.PrimeiraSection a{
+    display: block;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.conteiner{
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.segundaSection{
+margin-top: 36px;
+padding: 36px;
+
+
+}
+.segundaSection h2{
+    margin-bottom: 19.2px;
+}
+.segundaSection img{
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.segundaSection h3{
+margin-bottom:8px ;
+}
+
+.terceiraSection img{
+margin-bottom: 24px;
+border-radius: 10px;
+}
+
+.terceiraSection h3{
+    margin-bottom: 8px ;
+} 
+
+.terceiraSection{
+    margin-bottom: 32px;
+
+
+}
+.quartaSection img{
+    margin-bottom: 24px;
+    border-radius: 10px;
+    }
+
+.quartaSection h3{
+        margin-bottom: 8px ;
+    } 
+.quartaSection{
+        margin-bottom: 32px;
+    
+    
+    }
+.quintaSection img{
+        margin-bottom: 24px;
+        border-radius: 10px;
+        }
+    
+.quintaSection h3{
+            margin-bottom: 8px ;
+        } 
+.quintaSection{
+            margin-bottom: 32px;
+        
+        
+        }
+
+.sextaSection img{
+            margin-bottom: 24px;
+            border-radius: 10px;
+            }
+        
+.sextaSection h3{
+                margin-bottom: 8px ;
+            } 
+.sextaSection{
+                margin-bottom: 32px;
+            
+            
+            }     
+
+
+.setimaSection img{
+                margin-bottom: 24px;
+                border-radius: 10px;
+                }
+            
+.setimaSection h3{
+                    margin-bottom: 8px ;
+                } 
+.setimaSection p{
+    margin-bottom: 32px;
+}
+.setimaSection a{
+    display: block;
+    margin-bottom: 32px;
+    text-align: center;
+}
