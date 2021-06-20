@@ -64,7 +64,9 @@ ul {
 	display: block;
 }
 	
-
+a.link:visited{
+	color: teal;
+}
 
 #line {
 	position: absolute;
@@ -100,7 +102,7 @@ height: 250px;
 .portaCartao {
 	
 	margin: 0 auto;
-width: 50%;
+
 	width: 340px;
 	height: 240px;
 
@@ -207,6 +209,70 @@ width: 50%;
     color: white;
   }
   
+  .table {
+	font-size:20px ;
+	width: 340px;
+	height: 240px;
+	text-align: center;
+	border: 0;
+}
+
+.CeluSuperior {
+	background-color: cadetblue;
+	color: white;
+	border-bottom: 2px solid white;
+
+}
+
+.linha0 {
+	background-color: lightblue;
+	width: 250px;
+	border-bottom: 2px solid white;
+}
+
+.linha00 {
+	background-color: lightblue;
+	width: 250px;
+	border-bottom: 2px solid white;
+}
+
+.linha1 {
+	background: aquamarine;
+	width: 250px;
+	border-bottom: 2px solid white;
+
+}
+
+.linha2 {
+	background: aquamarine;
+	width: 250px;
+	border-bottom: 2px solid white;
+
+}
+
+.linha3 {
+	background: aquamarine;
+	width: 250px;
+	border-bottom: 2px solid white;
+}
+
+.linha4 {
+	background: aquamarine;
+	width: 250px;
+	border-bottom: 2px solid white;
+}
+
+.linha5 {
+	background: aquamarine;
+	width: 250px;
+	border-bottom: 2px solid white;
+}
+
+.linha6 {
+	background: aquamarine;
+	width: 250px;
+	border-bottom: 2px solid white;
+}
  
   @media screen and (max-width: 480px) {
 	
