@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="time" id="tempo">
+    <script>
+tempo = document.getElementById('#tempo')
+
+
+        
+ function criaCronometro(tempo,callbeck){
+    function mostraCronometro() {        
+        // Verificar se ainda sobra tempo
+        if () {
+            // vai mostrar o timer
+            // Diminuir o tempo restante
+            setTimeout(mostraCronometro)
+        } 
+
+    mostraCronometro()
+
+    // Criar uma variavel que verifica quanto tempo falta
+     if(tempo === 0001){
+        clearInterval(idTimer)
+         callbeck()
+     }
+ }
+ 
+
+function callbeck(){
+    alert ("acabou")
+}
+
+    </script>
+</body>
+</html>

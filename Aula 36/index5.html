@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ol id="elem">
+        <li>Filho 1</li>
+        <li>Filho 2</li>
+    </ol>
+
+    2 - Insira <li>Item 2</li><li>Item 3</li> na seguinte lista:
+    <ul>
+        <li>Item 1</li>            
+        <li>Item 4</li>
+    </ul>
+<script>
+     let elem = document.querySelector("#elem")
+    remove(elem)
+    insereLI()
+   
+    function remove(elem){
+    
+        
+
+                   
+            elem.innerHTML = ""            
+    
+        
+        
+    }
+
+function insereLI(){
+    
+    let li = document.querySelector("ul li:first-child")
+        li.insertAdjacentHTML("afterend", "<li>Item 2</li><li>Item 3</li>")
+}
+
+</script>
+</body>
+</html>
