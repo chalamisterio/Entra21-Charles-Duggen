@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+
+mostraNotificacao(top= 10, right=10, html= "Ola")
+
+function mostraNotificacao({top = 10, right = 10, html = "Olá"}) {
+            let notificacao = document.createElement("div")
+            notificacao.className = "notificacao"
+            notificacao.innerHTML = html
+            notificacao.style.top = top + "px"
+            notificacao.style.right = right + "px"
+            document.body.append(notificacao)
+        }
+
+</script>
+   
+</body>
+</html>
