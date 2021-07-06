@@ -78,7 +78,7 @@
 
         class Coelho extends Animal {
             constructor(nome) {
-                this.nome = nome
+                super(nome)
                 this.criadoEm = Date.now()
             }
         }
@@ -122,6 +122,8 @@
                 this.timer = setInterval(() => this.renderizar(), 1000)
             }
         }
+
+        
 
         let timer1 = new Relogio("h:m:s")
         timer1.comecar()

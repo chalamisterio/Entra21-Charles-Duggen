@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        let cabeca = {
+            oculos: 1
+        }
+
+        let mesa = {
+            __proto__:cabeca,
+            caneta: 3
+        }
+
+        let cama = {
+            __proto__:mesa,
+            lenco: 1,
+            travesseiro: 2
+        }
+
+        let bolso = {
+            __proto__:cama,
+            dinheiro: 200
+        }
+
+        console.log(bolso.caneta) // 3
+        console.log(cama.oculos) // 1
+        console.log(mesa.dinheiro) // undefined
+    </script>
+</body>
+</html>

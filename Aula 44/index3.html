@@ -8,6 +8,21 @@
 <body>
     <script>
 
+class Animal {
+            constructor(nome) {
+                this.nome = nome
+            }            
+        }
+
+        class Coelho extends Animal {
+            constructor(nome) {
+                super(nome)
+                this.criadoEm = Date.now()
+            }
+        }
+
+        let coelho = new Coelho("Coelho Branco")
+        alert(coelho.nome)
 
 
 

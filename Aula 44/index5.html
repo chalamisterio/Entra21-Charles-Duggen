@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Imovel {
+            constructor(endereco, preco) {
+                this.endereco = endereco
+                this.preco = preco
+            }
+
+            preemcher() {
+                this.endereco = prompt("Digite o endereço")
+                this.preco = Number(prompt("Digite o Preço do Imovel"))
+            }
+        }
+        class Novo extends Imovel {
+            constructor(preco) {
+                super(preco)
+            }
+
+            imprime() {
+                super.preemcher()
+                let adicional = 1000
+                let precoNormal = this.preco
+                let resultado = this.preco + adicional
+                console.log("Preço Normal " + precoNormal + " Preço com adicional " + resultado)
+            }
+
+        }
+
+
+        class Velho extends Imovel {
+            constructor(preco) {
+                super(preco)
+            }
+
+            imprime() {
+                super.preemcher()
+                let desconto = 500
+                let precoNormal = this.preco
+                let resultado = this.preco - desconto
+                console.log("Preço Normal " + precoNormal + " Preço com desconto " + resultado)
+            }
+
+        }
+        let novo = new Novo()
+        novo.imprime()
+        let velho = new Velho()
+        velho.imprime()
+    </script>
+</body>
+
+</html>
