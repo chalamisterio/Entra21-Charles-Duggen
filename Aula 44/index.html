@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Aluno {
+            constructor(matricula, nome, nota1, nota2, trabalho) {
+                this.matricula = matricula
+                this.nome = nome
+                this.nota1 = nota1
+                this.nota2 = nota2
+                this.trabalho = trabalho
+            }
+            calculaMedia() {
+                let media = (this.nota1 + this.nota2) / 3.3
+                let mediaTrabalho = this.trabalho / 5
+                let mediaGeral = media + mediaTrabalho
+                return mediaGeral
+            }
+
+            IsPassei() {
+                let mediaGeral = this.calculaMedia()
+                let quantoFalta = (6 - mediaGeral) * 5
+                if (mediaGeral >= 6) {
+                    return "passou"
+                }
+                else if (mediaGeral < 4) {
+                    return "wasted"
+                }
+                else {
+                    return quantoFalta
+                }
+            }
+        }
+        let asd = new Aluno("458468", "4884", 7, 7, 4)
+        console.log(asd.calculaMedia())
+        console.log(asd.IsPassei())
+
+    </script>
+</body>
+
+</html>
