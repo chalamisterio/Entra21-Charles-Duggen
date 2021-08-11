@@ -1,0 +1,13 @@
+{
+  "name": "modulosEs6",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Como usa módulos Os Modulos Es6 no node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
