@@ -1,12 +1,5 @@
-const { Pool } = require("pg");
 const format = require("pg-format");
-
-const pool = new Pool({
-host: "localhost",
-user: "postgres",
-password: "123456",
-database: "node"
-});
+const db = require("./db");
 
 (async () => {
 // try {
@@ -64,12 +57,12 @@ const funcionarios = [
 
  const query = format("INSERT INTO funcionarios (nome, email, telefone) VALUES %L RETURNING *", funcionarios);
 
- const res = await pool.query(query);
+ const res = await db.query(query);
 
  console.log(res.rows);
 } catch (error) {
 console.log(error.message);
 } finally {
-pool.end();
+db.end();
 }
 })();
